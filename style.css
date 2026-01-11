@@ -104,3 +104,39 @@ footer{
   color:var(--muted);
   font-size:14px;
 }
+/* ====== REMOVE ALL LINES IN PRAISE/TESTIMONIAL BLOCKQUOTES ====== */
+
+blockquote{
+  border-left: none !important;
+  padding-left: 0 !important;
+  margin: 18px 0 !important;
+}
+
+blockquote p{
+  margin: 0 0 8px !important;
+}
+
+blockquote footer{
+  border-top: none !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Kill any injected divider lines/pseudo-elements inside blockquotes */
+blockquote::before,
+blockquote::after,
+blockquote p::before,
+blockquote p::after,
+blockquote footer::before,
+blockquote footer::after{
+  content: none !important;
+  border: none !important;
+}
+
+/* If any element inside blockquote has a border, kill it */
+blockquote *{
+  border: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
