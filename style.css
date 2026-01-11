@@ -139,4 +139,19 @@ blockquote *{
   box-shadow: none !important;
   background-image: none !important;
 }
+.dog{
+  margin: 60px 0 0;
+  text-align: left;
+}
+
+.dog img{
+  max-width: 160px;
+  border: none;
+}
+
+.dog figcaption{
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 6px;
+}
 
