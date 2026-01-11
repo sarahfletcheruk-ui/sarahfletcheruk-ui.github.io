@@ -159,3 +159,7 @@ blockquote *{
   width: 100%;
   height: auto;
 }
+/* Make Stella slightly larger than the main portrait */
+.photo.dog img{
+  max-width: 700px;   /* roughly ~2x the small version */
+}
