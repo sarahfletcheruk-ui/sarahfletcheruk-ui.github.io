@@ -154,4 +154,8 @@ blockquote *{
   color: var(--muted);
   margin-top: 6px;
 }
-
+.dog img{
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+}
