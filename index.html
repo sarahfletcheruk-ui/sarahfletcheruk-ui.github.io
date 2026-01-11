@@ -27,7 +27,7 @@
         <em>PLUS ULTRA</em> was published by Cheerio Publishing in 2023.
         Her poetry has appeared in <em>The Poetry Review</em>, <em>The White Review</em>,
         <em>Poetry London</em>, and other publications. She has written articles for
-        <em>The New Statesman</em>, <em>The Washington Post</em>, and <em>The Critic</em>.
+        <em>The New Statesman</em>, <em>The Washington Post</em>, and <em>The Spectator</em>.
         She is completing an AHRC-funding PhD at Aberystwyth University on chronic pain and language; this project was the recipient of a Collaborative Doctoral Award for interdisciplinary research.
         She has published fiction in <em>The London Magazine</em> and is currently editing a novel.
       </p>
@@ -101,6 +101,19 @@
     </p>
     <footer>— Matthew Dickman</footer>
   </blockquote>
+  <blockquote>
+  <p>
+    “Sarah is an excellent and generous teacher. I thoroughly enjoyed the course and a lot of the activities had new and innovative prompts I hadn't explored before.”
+  </p>
+  <footer>— Poetry School “Writing Pain” participant</footer>
+</blockquote>
+
+<blockquote>
+  <p>
+    “My daughter loved working with Sarah. She is patient, intelligent and inspiring. My daughter now loves English and has even asked for more homework from Sarah!”
+  </p>
+  <footer>— 11+ tutoring client</footer>
+</blockquote>
 </section>
 
 
@@ -163,19 +176,24 @@
   </main>
 </body>
 </html>
-/* --- Praise blockquotes: remove divider lines --- */
+/* Kill any borders/lines inside blockquotes (Praise + testimonials) */
+blockquote,
+blockquote *{
+  border: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+blockquote::before,
+blockquote::after{
+  content: none !important;
+}
+
 blockquote{
-  border-left: none !important;
   padding-left: 0 !important;
+  margin: 20px 0 !important;
 }
 
 blockquote footer{
-  border-top: none !important;
-  padding-top: 0 !important;
-  margin-top: 8px;
-}
-
-/* In case you have a generic footer border rule elsewhere */
-footer{
-  border-top: none !important;
+  margin-top: 8px !important;
 }
